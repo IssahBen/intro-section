@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="bg-almost_white">
+    <nav class="flex  relative justify-between items-center py-5 px-8 w-screen  ">
+        <div class="flex flex-row justify-between items-center space-x-8">
+            <img src="images/logo.svg" alt="">
+            <div id="links" class="hidden md:flex space-x-8">
+                <div class="flex   relative flex-col ">
+                    <div class="flex items-center space-x-1">
+                        <a>
+                            <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold font-sans"
+                                data-target="l-menu">Features
+                            </h2>
+                        </a>
+                        <img src="images/icon-arrow-down.svg" alt="" class="w-3 h-2">
+                    </div>
+                    <div id="l-menu"
+                        class="  hidden shadow-2xl  p-6 rounded-lg absolute left-[-80px] top-10 w-52 border-2  bg-white flex flex-col items-center space-y-4 mt-5">
+                        <div class="flex space-x-4 items-center">
+                            <img src="images/icon-todo.svg" alt="">
+                            <p class="text-medium_gray font-semibold tracking-wide">Todo List</p>
+
+                        </div>
+                        <div class="flex space-x-4 items-center">
+                            <img src="images/icon-calendar.svg" alt="">
+                            <p class="text-medium_gray font-semibold tracking-wide">Calender</p>
+
+                        </div>
+                        <div class="flex space-x-4 items-center">
+                            <img src="images/icon-reminders.svg" alt="">
+                            <p class="text-medium_gray font-semibold tracking-wide">Reminders</p>
+
+                        </div>
+                        <div class="flex space-x-4 items-center">
+                            <img src="images/icon-planning.svg" alt="">
+                            <p class="text-medium_gray font-semibold tracking-wide">Planning</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex relative  items-center flex-col">
+                    <div class="flex items-center space-x-1">
+                        <a>
+                            <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold font-sans "
+                                data-target="l-menu2">Company
+                            </h2>
+                        </a>
+                        <img src="images/icon-arrow-down.svg" alt="" class="w-3 h-2">
+                    </div>
+                    <div id="l-menu2"
+                        class="flex  hidden px-2 py-8 rounded-xl border-2 shadow-2xl bg-white  absolute left-10 top-10 flex-col items-start w-44 space-y-4 mt-5 pl-10">
+                        <p class="text-medium_gray font-semibold font-sans tracking-wide">History</p>
+                        <p class="text-medium_gray font-semibold font-sans tracking-wide">Our team</p>
+                        <p class="text-medium_gray font-semibold font-sans tracking-wide">Blog</p>
+
+                    </div>
+
+                </div>
+                <div class="flex  items-center flex-col">
+                    <div class="flex items-center space-x-1">
+                        <a>
+                            <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold">Careers
+                            </h2>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="flex  items-center flex-col">
+                    <div class="flex items-center space-x-1">
+                        <a>
+                            <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold">About</h2>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" hidden md:flex space-x-4 items-center justify-center">
+            <p class="text-medium_gray hover:cursor-pointer font-semibold">Login</p>
+            <button
+                class=" p-2 rounded-xl border-2  border-medium_gray flex items-center justify-center font-semibold text-medium_gray">
+                Register
+            </button>
+        </div>
+
+        <button id="menu-btn" class="  z-30 block md:hidden focus:outline-none hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+        <div id="links2"
+            class="flex hidden absolute top-0 right-0 flex-col w-1/2 h-screen py-16  pl-6 space-y-5 bg-white">
+            <div class="flex  flex-col ">
+                <div class="flex items-center space-x-1">
+                    <a>
+                        <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold"
+                            data-target="sub1">Features</h2>
+                    </a>
+                    <img src="images/icon-arrow-down.svg" alt="" class="w-3 h-2">
+                </div>
+                <div id="sub1" class=" pl-10  hidden flex flex-col space-y-4 mt-5">
+                    <div class="flex space-x-4 items-center">
+                        <img src="images/icon-todo.svg" alt="">
+                        <p class="text-medium_gray font-semibold tracking-wide">Todo List</p>
+
+                    </div>
+                    <div class="flex space-x-4 items-center">
+                        <img src="images/icon-calendar.svg" alt="">
+                        <p class="text-medium_gray font-semibold tracking-wide">Calender</p>
+
+                    </div>
+                    <div class="flex space-x-4 items-center">
+                        <img src="images/icon-reminders.svg" alt="">
+                        <p class="text-medium_gray font-semibold tracking-wide">Reminders</p>
+
+                    </div>
+                    <div class="flex space-x-4 items-center">
+                        <img src="images/icon-planning.svg" alt="">
+                        <p class="text-medium_gray font-semibold tracking-wide">Planning</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="flex  flex-col">
+                <div class="flex items-center space-x-1">
+                    <a>
+                        <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold"
+                            data-target="sub2">Company</h2>
+                    </a>
+                    <img src="images/icon-arrow-down.svg" alt="" class="w-3 h-2">
+                </div>
+
+                <div id="sub2" class="flex   hidden flex-col space-y-2 mt-5 pl-10">
+                    <p class="text-medium_gray font-semibold font-sans tracking-wide">History</p>
+                    <p class="text-medium_gray font-semibold font-sans tracking-wide">Our team</p>
+                    <p class="text-medium_gray font-semibold font-sans tracking-wide">Blog</p>
+
+                </div>
+            </div>
+            <div class="flex  items-center space-x-1">
+                <a>
+                    <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold">Careers</h2>
+                </a>
+
+            </div>
+            <div class="flex  items-center space-x-1">
+                <a>
+                    <h2 class="hover:text-black hover:cursor-pointer text-medium_gray font-semibold">About</h2>
+                </a>
+            </div>
+            <div class=" flex flex-col  space-y-6 items-center px-4 pt-4">
+                <p class="text-medium_gray font-semibold">Login</p>
+                <button
+                    class=" p-2 rounded-xl border-2  border-medium_gray flex items-center justify-center font-semibold text-medium_gray w-full ">
+                    Register
+                </button>
+            </div>
+        </div>
+
+    </nav>
+    <section id="hero"
+        class="flex flex-col md:flex-row-reverse md:w-full md:justify-center md:pt-5 space-y-10 md:px-16 md:h-screen">
+        <div class="md:hidden">
+            <img src="images/image-hero-mobile.png" alt="">
+        </div>
+        <div class="md:block hidden ">
+            <img src="images/image-hero-desktop.png" alt="">
+        </div>
+        <div class="flex flex-col w-full md:items-start items-center px-2  md:h-full">
+            <h1 class="text-5xl font-bold">Make<br class="hidden md:block"> Remote Work</h1>
+            <div class="w-full flex md:justify-start justify-center md:mt-14 mt-8">
+                <p class="text-medium_gray text-lg w-96 font-sans tracking wide ">
+                    Get your team in sync, no matter your
+                    location. Streamline processes, create
+                    team rituals, and watch productivity soar.
+                </p>
+            </div>
+            <div class="flex md:justify-start justify-center w-full md:mt-24 mt-5 mb-10">
+                <button
+                    class=" p-5 w-48 rounded-3xl bg-almost_black text-white font-bold hover:bg-almost_white border-2 border-medium_gray hover:text-black">
+                    Learn more
+                </button>
+            </div>
+            <div class="flex lg:justify-start md:justify-evenly lg:space-x-8 w-full md:mt-8  lg:mt-40 md:mb-0 mb-16">
+                <img src="images/client-databiz.svg" alt="" class="h-5 ">
+                <img src="images/client-audiophile.svg" alt="" class="h-5 ">
+                <img src="images/client-meet.svg" alt="" class="h-5 ">
+                <img src="images/client-maker.svg" alt="" class="h-5 ">
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
